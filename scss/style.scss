@@ -7,10 +7,15 @@
 // font-family: "Helios";
 
 body {
-	font-family: "Haettenschweiler Regular";
-	font-weight: 400;
+	font-family: "Montserrat";
+	font-weight: 300;
+	font-size: 11px;
 }
 h1 {
-	font-family: "Gotham";
-	font-weight: 300;
+	font-family: "Helios";
+	font-weight: 400;
+	font-size: clamp(26px, 8vw, 109px); // adaptive fontsize
+	line-height: 1.154;
+	letter-spacing: 0.1em;
 }
+I continue the layout
