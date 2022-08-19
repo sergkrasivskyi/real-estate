@@ -11,6 +11,10 @@ body {
 	font-weight: 300;
 	font-size: 11px;
 }
+.container {
+	padding-left: clamp(20px, 10px + 6vw, 149px);
+	padding-right: clamp(20px, 10px + 6vw, 149px);
+}
 h1 {
 	font-family: "Helios";
 	font-weight: 400;
