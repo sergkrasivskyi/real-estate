@@ -99,11 +99,20 @@ h1, h2, h3, h4, h5, h6 {
   src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot) format("embedded-opentype"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff) format("woff"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff2) format("woff2"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf) format("truetype");
 }
 body {
-  font-family: "Haettenschweiler Regular";
-  font-weight: 400;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 11px;
+}
+
+.container {
+  padding-left: clamp(20px, 10px + 6vw, 149px);
+  padding-right: clamp(20px, 10px + 6vw, 149px);
 }
 
 h1 {
-  font-family: "Gotham";
-  font-weight: 300;
+  font-family: "Helios";
+  font-weight: 400;
+  font-size: clamp(26px, 8vw, 109px);
+  line-height: 1.154;
+  letter-spacing: 0.1em;
 }
