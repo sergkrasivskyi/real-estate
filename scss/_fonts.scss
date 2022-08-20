@@ -33,8 +33,10 @@
 
 @font-face {
 	font-family: "Haettenschweiler Regular";
-	src: url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot);
-	src: url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot) format("embedded-opentype"),
+	// src: url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot);
+
+	src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"),
+		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot) format("embedded-opentype"),
 		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff) format("woff"),
 		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff2) format("woff2"),
 		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf) format("truetype");
