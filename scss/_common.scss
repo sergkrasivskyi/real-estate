@@ -1,0 +1,26 @@
+/* Variables */
+/* Breakpoints*/
+$mobile: 1150;
+html {
+	font-size: 11px;
+}
+body {
+	font-family: "Montserrat";
+	font-weight: 300;
+	font-size: 1rem;
+}
+.container {
+	padding-inline: clamp(20px, 6.4vw, 149px);
+	@include media-min($mobile) {
+		padding-inline: min(10.34vw, 149px);
+	}
+}
+
+.button {
+	font-family: "Montserrat";
+	display: inline-block;
+	background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
+	box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	line-height: 1.2;
+}

@@ -15,173 +15,172 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
-        <header class="header">
-          <div class="header__logo">
-            <img src="./images/header/logo-header.svg" alt="logo" />
-          </div>
-          <div class="header__men u menu">
-            <button class="menu__icon icon-menu" type="button">
-              <span></span>
-            </button>
-            <nav class="menu__body ">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Про місто</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Про нас</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Центр продажу </a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <h1>Ріелторська агенція</h1>
-          <a href="">Вибрати квартиру</a>
-        </header>
-        <main class="main">
-          <section class="estate-search-section">
-            <h2 class="visually-hidden">Make your search</h2>
-            <ul class="search-list">
-              <li class="search-item">
-                <a href="#">Однокімнатна</a>
-              </li>
-              <li class="search-item">
-                <a href="#">Двокімнатна</a>
-              </li>
-              <li class="search-item">
-                <a href="#">Офісні приміщення</a>
-              </li>
-              <li class="search-item">
-                <a href="#">Студія</a>
-              </li>
-            </ul>
-          </section>
-          <section class="why-we-section">
-            <h2>Чому ми?</h2>
-            <ul>
-              <li>
-                <img
-                  src="./images/main/why-we-section/flats.svg"
-                  alt="Квартири"
-                />
-                <span>135</span>
-                <span>Квартири</span>
-              </li>
-              <li>
-                <img
-                  src="./images/main/why-we-section/poverhiv.svg"
-                  alt="Поверхів"
-                />
-                <span>10</span>
-                <span>Поверхів</span>
-              </li>
-              <li>
-                <img
-                  src="./images/main/why-we-section/square.svg"
-                  alt="Площа забудови"
-                />
-                <span>0.3</span>
-                <span>Площа забудови</span>
-              </li>
-            </ul>
-            <p>
-              При передачі квартири власнику в квартирі будуть вхідні двері,
-              вікна, балконний блок, газовий котел, батареї, чорнова штукатурка
-              стін, чорнова стяжка підлоги.
-            </p>
-          </section>
-          <section class="about-us-section">
-            <h2>Ми на карті</h2>
-            <figure>
+      <header class="header">
+        <div class="container">
+					<div class="header__top">
+						<div class="header__logo">
+							<img src="./images/header/logo-header.svg" alt="logo" />
+						</div>
+
+						<div class="header__menu menu">
+							<button aria-controls="nav-menu" class="menu__icon icon-menu" type="button">
+								<img src="./images/header/menu.svg" alt="header menu">
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list _active" id="nav-menu" aria-hidden="true">
+									<li class="menu__item">
+										<a class="menu__link" href="#">Про місто</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Про нас</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Центр продажу </a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Контакти</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+          <h1 class="header__title">Real Estate Agency</h1>
+          <a class="button header__button" href="">Вибрати квартиру</a>
+        </div>
+      </header>
+      <main class="main">
+        <section class="estate-search-section">
+          <h2 class="visually-hidden">Make your search</h2>
+          <ul class="search-list">
+            <li class="search-item">
+              <a href="#">Однокімнатна</a>
+            </li>
+            <li class="search-item">
+              <a href="#">Двокімнатна</a>
+            </li>
+            <li class="search-item">
+              <a href="#">Офісні приміщення</a>
+            </li>
+            <li class="search-item">
+              <a href="#">Студія</a>
+            </li>
+          </ul>
+        </section>
+        <section class="why-we-section">
+          <h2>Чому ми?</h2>
+          <ul>
+            <li>
               <img
-                src="./images/main/about-us-section/map.jpg"
-                alt=""
-                width="350"
+                src="./images/main/why-we-section/flats.svg"
+                alt="Квартири"
               />
-              <figcaption>
-                20300, Умань, вул. Джерельна, 1 (біля Епіцентру)
-              </figcaption>
-            </figure>
-            <h3>Отримайте детальну консультацію</h3>
-            <p>
-              Заповніть анкету, щоб отримати детальну відповідь на ваші
-              запитання та попередню вартість.
-            </p>
-            <form action="submit">
-              <input type="text" name="client-name" placeholder="Ваше ім'я" />
-              <input
-                type="number"
-                name="flat-square"
-                placeholder="Бажана площа Вашої квартири"
+              <span>135</span>
+              <span>Квартири</span>
+            </li>
+            <li>
+              <img
+                src="./images/main/why-we-section/poverhiv.svg"
+                alt="Поверхів"
               />
-              <input
-                type="number"
-                name="rooms-number"
-                placeholder="Однокімнатна або двокімнатна квартира"
+              <span>10</span>
+              <span>Поверхів</span>
+            </li>
+            <li>
+              <img
+                src="./images/main/why-we-section/square.svg"
+                alt="Площа забудови"
               />
-              <input
-                type="tel"
-                name="client-tel"
-                placeholder="Номер телефону"
-              />
-              <button type="submit">Відправити</button>
-            </form>
-          </section>
-        </main>
-        <footer class="footer">
-          <div class="container">
-            <div class="footer__wrapper">
-              <p class="work-time">Години роботи: Пн-пт: 9.00-18.00</p>
-              <div class="footer__logo">
-                <img src="./images/footer/footer-logo.svg" alt="" />
-              </div>
-              <a class="footer__tel" href="tel:+380731020120"
-                >+380 73 102 01 20</a
-              >
-              <ul class="footer__socials socials">
-                <li>
-                  <a class="socials__link" href="#"
-                    ><img
-                      class="socials__icon"
-                      src="./images/footer/whatsapp.svg"
-                      alt="WhatsApp"
-                  /></a>
-                </li>
-                <li>
-                  <a class="socials__link" href="#"
-                    ><img
-                      class="socials__icon"
-                      src="./images/footer/insta.svg"
-                      alt="Instagram"
-                  /></a>
-                </li>
-                <li>
-                  <a class="socials__link" href="#"
-                    ><img
-                      class="socials__icon"
-                      src="./images/footer/mail.svg"
-                      alt="mail"
-                  /></a>
-                </li>
-                <li>
-                  <a class="socials__link" href="#"
-                    ><img
-                      class="socials__icon"
-                      src="./images/footer/facebook.svg"
-                      alt="Facebook"
-                  /></a>
-                </li>
-              </ul>
+              <span>0.3</span>
+              <span>Площа забудови</span>
+            </li>
+          </ul>
+          <p>
+            При передачі квартири власнику в квартирі будуть вхідні двері,
+            вікна, балконний блок, газовий котел, батареї, чорнова штукатурка
+            стін, чорнова стяжка підлоги.
+          </p>
+        </section>
+        <section class="about-us-section">
+          <h2>Ми на карті</h2>
+          <figure class="we-on-map">
+            <img
+              src="./images/main/about-us-section/map.jpg"
+              alt=""
+              width="350"
+            />
+            <figcaption>
+              20300, Умань, вул. Джерельна, 1 (біля Епіцентру)
+            </figcaption>
+          </figure>
+          <h3>Отримайте детальну консультацію</h3>
+          <p>
+            Заповніть анкету, щоб отримати детальну відповідь на ваші запитання
+            та попередню вартість.
+          </p>
+          <form action="submit">
+            <input type="text" name="client-name" placeholder="Ваше ім'я" />
+            <input
+              type="number"
+              name="flat-square"
+              placeholder="Бажана площа Вашої квартири"
+            />
+            <input
+              type="number"
+              name="rooms-number"
+              placeholder="Однокімнатна або двокімнатна квартира"
+            />
+            <input type="tel" name="client-tel" placeholder="Номер телефону" />
+            <button type="submit">Відправити</button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <p class="work-time">Години роботи: Пн-пт: 9.00-18.00</p>
+            <div class="footer__logo">
+              <img src="./images/footer/footer-logo.svg" alt="" />
             </div>
+            <a class="footer__tel" href="tel:+380731020120"
+              >+380 73 102 01 20</a
+            >
+            <ul class="footer__socials socials">
+              <li>
+                <a class="socials__link" href="#"
+                  ><img
+                    class="socials__icon"
+                    src="./images/footer/whatsapp.svg"
+                    alt="WhatsApp"
+                /></a>
+              </li>
+              <li>
+                <a class="socials__link" href="#"
+                  ><img
+                    class="socials__icon"
+                    src="./images/footer/insta.svg"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a class="socials__link" href="#"
+                  ><img
+                    class="socials__icon"
+                    src="./images/footer/mail.svg"
+                    alt="mail"
+                /></a>
+              </li>
+              <li>
+                <a class="socials__link" href="#"
+                  ><img
+                    class="socials__icon"
+                    src="./images/footer/facebook.svg"
+                    alt="Facebook"
+                /></a>
+              </li>
+            </ul>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

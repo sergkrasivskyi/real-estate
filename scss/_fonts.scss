@@ -1,6 +1,6 @@
 // Fonts
 @font-face {
-	font-family: "Montserrat",  sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-family: "Roboto", sans-serif;
 	@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap");
 }
@@ -33,11 +33,20 @@
 
 @font-face {
 	font-family: "Haettenschweiler Regular";
+	src: url("./../fonts/Haettenschweiler/18324_haetten.eot");
+	src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"),
+		url("./../fonts/Haettenschweiler/18324_haetten.woff") format("woff"),
+		url('./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf') format("truetype"),
+		// url("./../fonts/Haettenschweiler/18324_haetten.ttf") format("truetype"),
+		url("./../fonts/Haettenschweiler/18324_haetten.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+
 	// src: url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot);
 
-	src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"),
-		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot) format("embedded-opentype"),
-		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff) format("woff"),
-		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff2) format("woff2"),
-		url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf) format("truetype");
+	// src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"),
+	// 	url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot) format("embedded-opentype"),
+		// url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff) format("woff"),
+	// 	url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff2) format("woff2"),
+	// 	url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf) format("truetype");
 }

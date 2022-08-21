@@ -96,23 +96,140 @@ h1, h2, h3, h4, h5, h6 {
 }
 @font-face {
   font-family: "Haettenschweiler Regular";
-  src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.eot) format("embedded-opentype"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff) format("woff"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.woff2) format("woff2"), url(./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf) format("truetype");
+  src: url("./../fonts/Haettenschweiler/18324_haetten.eot");
+  src: local("Haettenschweiler Regular"), local("Haettenschweiler-Regular"), url("./../fonts/Haettenschweiler/18324_haetten.woff") format("woff"), url("./../fonts/Haettenschweiler/Haettenschweiler-Regular.ttf") format("truetype"), url("./../fonts/Haettenschweiler/18324_haetten.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
 }
-body {
-  font-family: "Montserrat";
-  font-weight: 300;
+/* Variables */
+/* Breakpoints*/
+html {
   font-size: 11px;
 }
 
+body {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 .container {
-  padding-left: clamp(20px, 10px + 6vw, 149px);
-  padding-right: clamp(20px, 10px + 6vw, 149px);
+  padding-inline: clamp(20px, 6.4vw, 149px);
+}
+@media (min-width: 1150px) {
+  .container {
+    padding-inline: min(10.34vw, 149px);
+  }
+}
+
+.button {
+  font-family: "Montserrat";
+  display: inline-block;
+  background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
+  box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  line-height: 1.2;
 }
 
 h1 {
-  font-family: "Helios";
   font-weight: 400;
-  font-size: clamp(26px, 8vw, 109px);
+  letter-spacing: 0.1em;
+}
+
+.footer {
+  background-color: #562000;
+}
+
+.header {
+  background-image: url("./../images/header/main-pict.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-padding-before: 1.64rem;
+          padding-block-start: 1.64rem;
+  text-align: center;
+}
+
+.header__top {
+  margin-bottom: 1.36rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-family: "Haettenschweiler Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(2.36rem, 8vw, 9.909rem);
   line-height: 1.154;
   letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2.18rem;
+}
+.header .menu__icon {
+  display: block;
+  background-color: transparent;
+}
+@media (min-width: 1150px) {
+  .header .menu__icon {
+    display: none;
+  }
+}
+.header .menu__list {
+  display: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2.64rem;
+  line-height: 1.172;
+}
+.header .menu__list * {
+  color: #ffffff;
+}
+@media (min-width: 1150px) {
+  .header .menu__list {
+    display: flex;
+    -moz-column-gap: clamp(2rem, 6.4vw, 6.64rem);
+         column-gap: clamp(2rem, 6.4vw, 6.64rem);
+  }
+}
+.header .menu__list._active {
+  display: block;
+  position: fixed;
+  padding-top: 17px;
+  padding-left: 21px;
+  padding-right: 21px;
+  top: 57px;
+  right: -8px;
+  height: calc(100% - 57px - 28px);
+  background: rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 43.8464px;
+  border-bottom-left-radius: 43.8464px;
+  box-shadow: -8px -28px #562000, -8px 28px #562000;
+  transition: left 2s ease;
+  font-size: 1.45rem;
+  line-height: 1.172;
+}
+.header .menu__list._active > li {
+  border: 0.454106px solid #8d3500;
+  border-radius: 8.17391px;
+  padding: 5px 3px;
+}
+.header .menu__list._active > li + li {
+  margin-top: 25px;
+}
+.header .menu__list._active a {
+  color: #000000;
+}
+.header__button {
+  padding-block: clamp(18px, 6vw, 38px);
+  padding-inline: clamp(40px, 12vw, 90px);
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.84rem;
+  border-radius: 14.3457px;
+  margin-bottom: 1.1rem;
+}
+
+.we-on-map img {
+  width: 100%;
 }
