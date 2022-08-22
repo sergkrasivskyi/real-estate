@@ -131,6 +131,10 @@ body {
   line-height: 1.2;
 }
 
+.closed {
+  display: none;
+}
+
 h1 {
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -167,6 +171,10 @@ h1 {
   margin-bottom: 2.18rem;
 }
 .header .menu__icon {
+  position: fixed;
+  right: 20px;
+  top: 31px;
+  z-index: 9999;
   display: block;
   background-color: transparent;
 }
@@ -197,7 +205,7 @@ h1 {
   position: fixed;
   padding-top: 17px;
   padding-left: 21px;
-  padding-right: 21px;
+  padding-right: 29px;
   top: 57px;
   right: -8px;
   height: calc(100% - 57px - 28px);
@@ -219,6 +227,11 @@ h1 {
 }
 .header .menu__list._active a {
   color: #000000;
+}
+@media (min-width: 1150px) {
+  .header .menu__list._active {
+    display: none;
+  }
 }
 .header__button {
   padding-block: clamp(18px, 6vw, 38px);

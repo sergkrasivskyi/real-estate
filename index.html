@@ -24,10 +24,11 @@
 
 						<div class="header__menu menu">
 							<button aria-controls="nav-menu" class="menu__icon icon-menu" type="button">
-								<img src="./images/header/menu.svg" alt="header menu">
+								<img class="open-menu" src="./images/header/menu.svg" alt="open burger menu" aria-expanded="true">
+								<img class="close-menu closed" src="./images/header/menu-closed.svg" alt="close burger menu" aria-expanded="false">
 							</button>
 							<nav class="menu__body">
-								<ul class="menu__list _active" id="nav-menu" aria-hidden="true">
+								<ul class="menu__list" id="nav-menu" aria-hidden="true">
 									<li class="menu__item">
 										<a class="menu__link" href="#">Про місто</a>
 									</li>
@@ -182,5 +183,6 @@
         </div>
       </footer>
     </div>
+		<script src="./js/script.js"></script>
   </body>
 </html>
