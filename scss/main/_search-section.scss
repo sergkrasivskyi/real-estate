@@ -1,0 +1,56 @@
+/* search section*/
+.search-list {
+}
+.search-item {
+	height: clamp(10.55rem, 35vw, 23.36rem);
+	display: flex;
+	align-items: flex-end;
+	padding-left: 2.1rem;
+	padding-bottom: 1.36rem;
+	text-align: center;
+	a {
+		z-index: 2;
+		background: rgba(255, 255, 255, 0.42);
+		font-weight: 500;
+		font-size: 1.09rem;
+		line-height: 1.25;
+		color: #ffffff;
+		&::after {
+			vertical-align: middle;
+			display: inline-block;
+			margin-left: 0.5rem;
+			content: url("./../../images/main/search-section/right-arrow.svg");
+			// background-image: url("./../../images/main/search-section/right-arrow.svg");
+		}
+	}
+}
+.ibg {
+	background-size: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	&::after {
+		z-index: 0;
+		position: absolute;
+		content: '';
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+}
+
+.one-room {
+	background-image: url("./../../images/main/search-section/1flat.jpg");
+}
+.two-room {
+	background-image: url("./../../images/main/search-section/2flat.jpg");
+}
+.office {
+	background-image: url("./../../images/main/search-section/office.jpg");
+}
+
+.studio {
+	background-image: url("./../../images/main/search-section/studio.jpg");
+}
+/* / search rection */

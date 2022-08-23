@@ -17,92 +17,111 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-					<div class="header__top">
-						<div class="header__logo">
-							<img src="./images/header/logo-header.svg" alt="logo" />
-						</div>
+          <div class="header__top">
+            <div class="header__logo">
+              <img src="./images/header/logo-header.svg" alt="logo" />
+            </div>
 
-						<div class="header__menu menu">
-							<button aria-controls="nav-menu" class="menu__icon icon-menu" type="button">
-								<img class="open-menu" src="./images/header/menu.svg" alt="open burger menu" aria-expanded="true">
-								<img class="close-menu closed" src="./images/header/menu-closed.svg" alt="close burger menu" aria-expanded="false">
-							</button>
-							<nav class="menu__body">
-								<ul class="menu__list" id="nav-menu" aria-hidden="true">
-									<li class="menu__item">
-										<a class="menu__link" href="#">Про місто</a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="#">Про нас</a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="#">Центр продажу </a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="#">Контакти</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
+            <div class="header__menu menu">
+              <button
+                aria-controls="nav-menu"
+                class="menu__icon icon-menu"
+                type="button"
+              >
+                <img
+                  class="open-menu"
+                  src="./images/header/menu.svg"
+                  alt="open burger menu"
+                  aria-expanded="true"
+                />
+                <img
+                  class="close-menu closed"
+                  src="./images/header/menu-closed.svg"
+                  alt="close burger menu"
+                  aria-expanded="false"
+                />
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list" id="nav-menu" aria-hidden="true">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Про місто</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Про нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Центр продажу </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
           <h1 class="header__title">Real Estate Agency</h1>
           <a class="button header__button" href="">Вибрати квартиру</a>
         </div>
       </header>
       <main class="main">
         <section class="estate-search-section">
-          <h2 class="visually-hidden">Make your search</h2>
+          <h2 class="section-title visually-hidden">Make your search</h2>
           <ul class="search-list">
-            <li class="search-item">
+            <li class="search-item ibg one-room">
               <a href="#">Однокімнатна</a>
             </li>
-            <li class="search-item">
+            <li class="search-item ibg two-room">
               <a href="#">Двокімнатна</a>
             </li>
-            <li class="search-item">
+            <li class="search-item ibg office">
               <a href="#">Офісні приміщення</a>
             </li>
-            <li class="search-item">
+            <li class="search-item ibg studio">
               <a href="#">Студія</a>
             </li>
           </ul>
         </section>
-        <section class="why-we-section">
-          <h2>Чому ми?</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/main/why-we-section/flats.svg"
-                alt="Квартири"
-              />
-              <span>135</span>
-              <span>Квартири</span>
-            </li>
-            <li>
-              <img
-                src="./images/main/why-we-section/poverhiv.svg"
-                alt="Поверхів"
-              />
-              <span>10</span>
-              <span>Поверхів</span>
-            </li>
-            <li>
-              <img
-                src="./images/main/why-we-section/square.svg"
-                alt="Площа забудови"
-              />
-              <span>0.3</span>
-              <span>Площа забудови</span>
-            </li>
-          </ul>
-          <p>
-            При передачі квартири власнику в квартирі будуть вхідні двері,
-            вікна, балконний блок, газовий котел, батареї, чорнова штукатурка
-            стін, чорнова стяжка підлоги.
-          </p>
+        <section class="why-we-section why-we">
+          <div class="container">
+            <h2 class="section-title">Чому ми?</h2>
+            <ul class="why-we__list">
+              <li class="why-we__item">
+                <img
+                  class="why-we__image"
+                  src="./images/main/why-we-section/flats.svg"
+                  alt="Квартири"
+                />
+                <span class="why-we__count">135</span>
+                <span class="why-we__estate">Квартири</span>
+              </li>
+              <li class="why-we__item">
+                <img
+                  class="why-we__image"
+                  src="./images/main/why-we-section/poverhiv.svg"
+                  alt="Поверхів"
+                />
+                <span class="why-we__count">10</span>
+                <span class="why-we__estate">Поверхів</span>
+              </li>
+              <li class="why-we__item">
+                <img
+                  class="why-we__image"
+                  src="./images/main/why-we-section/square.svg"
+                  alt="Площа забудови"
+                />
+                <span class="why-we__count">0.3 га</span>
+                <span class="why-we__estate">Площа забудови</span>
+              </li>
+            </ul>
+            <p class="why-we__text">
+              При передачі квартири власнику в квартирі будуть вхідні двері,
+              вікна, балконний блок, газовий котел, батареї, чорнова штукатурка
+              стін, чорнова стяжка підлоги.
+            </p>
+          </div>
         </section>
         <section class="about-us-section">
-          <h2>Ми на карті</h2>
+          <h2 class="section-title">Ми на карті</h2>
           <figure class="we-on-map">
             <img
               src="./images/main/about-us-section/map.jpg"
@@ -183,6 +202,6 @@
         </div>
       </footer>
     </div>
-		<script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

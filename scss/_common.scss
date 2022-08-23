@@ -11,6 +11,7 @@ body {
 }
 .container {
 	padding-inline: clamp(20px, 6.4vw, 149px);
+	margin: 0 auto;
 	@include media-min($mobile) {
 		padding-inline: min(10.34vw, 149px);
 	}
@@ -26,4 +27,26 @@ body {
 }
 .closed {
 	display: none;
+}
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+.section-title {
+	font-family: "Helios";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.82rem; // 31px;
+	line-height: 1.16; // 36px;
+	letter-spacing: 0.1em;
+
+	color: #8d3500;
 }

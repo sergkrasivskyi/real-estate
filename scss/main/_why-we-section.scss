@@ -1,0 +1,51 @@
+.why-we-section {
+}
+.why-we {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 18px;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns:  0.4fr 0.7fr;
+		grid-template-rows: 1fr 1fr;
+		place-items: center;
+		gap: 8px;
+		padding: 1rem 0.8rem;
+		border: 0.454106px solid #8d3500;
+		border-radius: 8.17391px;
+	}
+
+	&__image {
+		grid-row: span 2;
+	}
+
+	&__count {
+		font-family: "Helios";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.1em;
+
+		color: #000000;
+	}
+
+	&__estate {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 11px;
+		line-height: 13px;
+
+		color: #000000;
+	}
+
+	&__text {
+	}
+}

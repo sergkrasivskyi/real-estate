@@ -1,5 +1,3 @@
-const menuHeader = document.querySelector(".header__menu");
-const menuIcon = document.querySelector(".menu__icon");
 const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 const menuList = document.querySelector(".menu__list");
