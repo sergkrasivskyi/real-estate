@@ -38,7 +38,7 @@
 			top: 31px;
 			display: block;
 			background-color: transparent;
-			@include media-min($mobile) {
+			@include media-min($over-mobile) {
 				display: none;
 			}
 
@@ -52,7 +52,7 @@
 			& * {
 				color: #ffffff;
 			}
-			@include media-min($mobile) {
+			@include media-min($over-mobile) {
 				display: flex;
 				column-gap: clamp(2rem, 6.4vw, 6.64rem);
 				// justify-content: space-between;
@@ -87,7 +87,7 @@
 				& a {
 					color: #000000;
 				}
-				@include media-min($mobile) {
+				@include media-min($over-mobile) {
 					display: none;
 				}
 			}
@@ -96,7 +96,7 @@
 	&__button {
 		padding-block: 1.64rem;
 		padding-inline: 3.64rem;
-		@include media-min($mobile) {
+		@include media-min($over-mobile) {
 			font-size: 1.82rem; //20px
 			padding-block: 3.45rem;
 			padding-inline: 8.18rem;

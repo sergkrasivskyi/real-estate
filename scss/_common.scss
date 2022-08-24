@@ -1,24 +1,24 @@
 /* Variables */
 /* Breakpoints*/
-$mobile: 1150;
+
 html {
 	font-size: 11px;
 }
 body {
-	font-family: "Montserrat";
+	font-family: $ff-body;
 	font-weight: 300;
 	font-size: 1rem;
 }
 .container {
 	padding-inline: clamp(20px, 6.4vw, 149px);
 	margin: 0 auto;
-	@include media-min($mobile) {
+	@include media-min($over-mobile) {
 		padding-inline: min(10.34vw, 149px);
 	}
 }
 
 .button {
-	font-family: "Montserrat";
+	font-family: $ff-body;
 	display: inline-block;
 	background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
 	box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
@@ -41,7 +41,7 @@ body {
 	margin: -1px;
 }
 .section-title {
-	font-family: "Helios";
+	font-family: $ff-secondary;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 2.82rem; // 31px;
@@ -50,3 +50,16 @@ body {
 
 	color: #8d3500;
 }
+/* Utility classes*/
+// Ми визначаємо службові класи, які допоможуть
+//  у подальшій роботі над проектом, щось по типу власного css-фреймворку
+
+.text-primary-400 {
+	color: $clr-primary-400;
+}
+.text-accent-400 {
+	color: $clr-accent-400;
+}
+.fw-bold { font-weight: $fw-bold;}
+.fw-semi-bold { font-weight: $fw-semi-bold;}
+.fw-bold { font-weight: $fw-regular;}

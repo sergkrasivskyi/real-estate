@@ -160,6 +160,27 @@ body {
   color: #8d3500;
 }
 
+/* Utility classes*/
+.text-primary-400 {
+  color: gray;
+}
+
+.text-accent-400 {
+  color: tomato;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-semi-bold {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 400;
+}
+
 .header {
   background-image: url("./../images/header/main-pict.jpg");
   background-repeat: no-repeat;

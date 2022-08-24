@@ -1,0 +1,42 @@
+$clr-primary-400: gray;
+$clr-accent-400: tomato;
+// 1 визначаємо змінні для шрифтів 
+// 1.1 font family
+$ff-primary: "Montserrat", sans-serif;
+$ff-secondary: "Helios";
+$ff-other-light-semibold: "Gotham";
+$ff-other-regular: "Haettenschweiler Regular";
+
+$ff-body: $ff-primary;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
+$fw-black: 800;
+
+// робимо систему зміннмх для зручності подальшого використання
+$fs-300: 1rem;
+$fs-400: 1.2rem;
+$fs-500: 2rem;
+$fs-600: 2.5rem;
+$fs-700: 3rem;
+// визначаємо розмір шрифта у секціях через систему змінних
+$fs-body: $fs-400;
+$fs-primary-heading: $fs-700;
+$fs-secondary-heading: $fs-600;
+
+$fs-nav: $fs-500;
+$fs-buttton: $fs-400; 
+$over-mobile: 1150;
+
+
+@include media-min($over-mobile) {
+	// змнінюємо розмір шрифта тільки у медіа запросах
+	$fs-400: 1.5rem;
+	$fs-500: 2rem;
+	$fs-body: $fs-500;
+	$fs-nav: $fs-600;
+	$fs-primary-heading: $fs-700;
+	$fs-secondary-heading: $fs-600;
+}
