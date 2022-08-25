@@ -108,7 +108,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -124,7 +124,7 @@ body {
 }
 
 .button {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
   box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
@@ -310,7 +310,7 @@ body {
   vertical-align: middle;
   display: inline-block;
   margin-left: 0.5rem;
-  content: url("./../../images/main/search-section/right-arrow.svg");
+  content: url("./../images/main/search-section/right-arrow.svg");
 }
 
 .ibg {
@@ -330,19 +330,19 @@ body {
 }
 
 .one-room {
-  background-image: url("./../../images/main/search-section/1flat.jpg");
+  background-image: url("./../images/main/search-section/1flat.jpg");
 }
 
 .two-room {
-  background-image: url("./../../images/main/search-section/2flat.jpg");
+  background-image: url("./../images/main/search-section/2flat.jpg");
 }
 
 .office {
-  background-image: url("./../../images/main/search-section/office.jpg");
+  background-image: url("./../images/main/search-section/office.jpg");
 }
 
 .studio {
-  background-image: url("./../../images/main/search-section/studio.jpg");
+  background-image: url("./../images/main/search-section/studio.jpg");
 }
 
 /* / search rection */
