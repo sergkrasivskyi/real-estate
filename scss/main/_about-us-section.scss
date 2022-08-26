@@ -1,0 +1,79 @@
+.about-us-section {
+}
+.about-us {
+	&__title {
+	}
+
+	&__map {
+	}
+
+	&__subtitle {
+		margin-top: 2.09rem;
+		font-weight: 500;
+		font-size: 1.82rem; //20px;
+		line-height: 1.2; // 24px;
+		text-align: center;
+	}
+
+	&__form-description {
+		margin-top: 0.55rem;
+		font-weight: 300;
+		font-size: 1.27rem; //14px;
+		line-height: 1.21; // 17px;
+		text-align: center;
+	}
+
+	&__form {
+		margin-top: 0.55rem;
+		input {
+			margin: 0 auto;
+			margin-top: 0.5rem;
+			display: block;
+			width: 100%;
+			max-width: 320px;
+			padding: 1.09rem 0.55rem;
+			border: 1px solid gray;
+			font-weight: 300;
+			font-size: 1rem;
+			line-height: 1.18;
+
+			/* identical to box height */
+
+			color: rgba(0, 0, 0, 0.4);
+		}
+	}
+}
+
+.map {
+	&__picture {
+		width: 100%;
+	}
+
+	&__description {
+		font-weight: 500;
+		font-size: 0.9rem;
+		line-height: 1.09;
+		text-align: center;
+
+		color: #8d3500;
+	}
+}
+.form-request {
+	&__client-name {
+	}
+
+	&__flat-square {
+	}
+
+	&__rooms-amount {
+	}
+
+	&__client-tel {
+	}
+
+	&__client-mail {
+	}
+
+	&__button {
+	}
+}

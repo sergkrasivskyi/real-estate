@@ -18,7 +18,9 @@
       <header class="header">
         <div class="container">
           <div class="header__top">
-							<a class="header__logo" href="#"><img src="./images/header/logo-header.svg" alt="logo" /></a>
+            <a class="header__logo" href="#"
+              ><img src="./images/header/logo-header.svg" alt="logo"
+            /></a>
             <div class="header__menu menu">
               <button
                 aria-controls="nav-menu"
@@ -80,7 +82,7 @@
         </section>
         <section class="why-we-section why-we">
           <div class="container">
-            <h2 class="section-title">Чому ми?</h2>
+            <h2 class="section-title why-we__title">Чому ми?</h2>
             <ul class="why-we__list">
               <li class="why-we__item">
                 <img
@@ -117,39 +119,75 @@
             </p>
           </div>
         </section>
-        <section class="about-us-section">
-					<!-- ми можеми використовувати |  для
+        <section class="about-us-section about-us">
+          <!-- ми можеми використовувати |  для
 						 візуального відділення службових класів від інших-->
-          <h2 class="section-title | bg-primary-500">Ми на карті</h2>
-          <figure class="we-on-map">
+          <h2 class="section-title about-us__title | bg-primary-500">
+            Ми на карті
+          </h2>
+          <figure class="about-us__map map">
             <img
+              class="map__picture"
               src="./images/main/about-us-section/map.jpg"
               alt=""
               width="350"
             />
-            <figcaption>
+            <figcaption class="map__description">
               20300, Умань, вул. Джерельна, 1 (біля Епіцентру)
             </figcaption>
           </figure>
-          <h3>Отримайте детальну консультацію</h3>
-          <p>
+          <h3 class="about-us__subtitle">Отримайте детальну консультацію</h3>
+          <p class="about-us__form-description">
             Заповніть анкету, щоб отримати детальну відповідь на ваші запитання
             та попередню вартість.
           </p>
-          <form action="submit">
-            <input type="text" name="client-name" placeholder="Ваше ім'я" />
+          <form class="about-us__form form-request" action="submit">
+            <label for="client-name"></label>
             <input
+              class="form-request__client-name"
+              type="text"
+              name="client-name"
+              placeholder="Василь Бондаренко"
+              id="client-name"
+            />
+            <label for="flat-square"></label>
+            <input
+              class="form-request__flat-square"
               type="number"
               name="flat-square"
               placeholder="Бажана площа Вашої квартири"
+              id="flat-square"
             />
+            <label for="rooms-amount"></label>
             <input
+              class="form-request__rooms-amount"
               type="number"
               name="rooms-number"
               placeholder="Однокімнатна або двокімнатна квартира"
+              id="rooms-amount"
             />
-            <input type="tel" name="client-tel" placeholder="Номер телефону" />
-            <button type="submit">Відправити</button>
+            <label for="client-tel"></label>
+            <input
+              class="form-request__client-tel"
+              type="tel"
+              name="client-tel"
+							pattern="[0-9]+"
+              placeholder="+380 XX XXX XX XX"
+              id="client-tel"
+            />
+            <label for="client-mail"></label>
+            <input
+              class="form-request__client-mail"
+              type="email"
+              placeholder="example@ukr.net"
+              title="Введіть коректний email"
+              pattern="[a-zA-Z0-9]{8,}"
+              name="mail"
+              id="client-mail"
+            />
+            <button class="button form-request__button" type="button">
+              Відправити запит
+            </button>
           </form>
         </section>
       </main>

@@ -7,7 +7,6 @@
 }
 .header {
 	&__logo {
-		
 	}
 	&__top {
 		margin-bottom: 1.36rem;
@@ -38,10 +37,9 @@
 			top: 31px;
 			display: block;
 			background-color: transparent;
-			@include media-min($over-mobile) {
+			@include media-min($lg-screen) {
 				display: none;
 			}
-
 		}
 		&__list {
 			display: none;
@@ -52,7 +50,7 @@
 			& * {
 				color: #ffffff;
 			}
-			@include media-min($over-mobile) {
+			@include media-min($lg-screen) {
 				display: flex;
 				column-gap: clamp(2rem, 6.4vw, 6.64rem);
 				// justify-content: space-between;
@@ -87,16 +85,17 @@
 				& a {
 					color: #000000;
 				}
-				@include media-min($over-mobile) {
+				@include media-min($lg-screen) {
 					display: none;
 				}
 			}
 		}
 	}
 	&__button {
+		display: inline-block;
 		padding-block: 1.64rem;
 		padding-inline: 3.64rem;
-		@include media-min($over-mobile) {
+		@include media-min($lg-screen) {
 			font-size: 1.82rem; //20px
 			padding-block: 3.45rem;
 			padding-inline: 8.18rem;

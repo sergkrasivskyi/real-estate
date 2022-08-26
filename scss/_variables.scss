@@ -28,10 +28,10 @@ $fs-secondary-heading: $fs-600;
 
 $fs-nav: $fs-500;
 $fs-buttton: $fs-400; 
-$over-mobile: 1150;
+$lg-screen: 1150;
 
 
-@include media-min($over-mobile) {
+@include media-min($lg-screen) {
 	// змнінюємо розмір шрифта тільки у медіа запросах
 	$fs-400: 1.5rem;
 	$fs-500: 2rem;

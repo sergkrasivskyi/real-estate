@@ -124,8 +124,9 @@ body {
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  display: inline-block;
   background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
   box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -157,6 +158,7 @@ body {
   font-size: 2.82rem;
   line-height: 1.16;
   letter-spacing: 0.1em;
+  text-align: center;
   color: #8d3500;
 }
 
@@ -272,6 +274,7 @@ body {
   }
 }
 .header__button {
+  display: inline-block;
   padding-block: 1.64rem;
   padding-inline: 3.64rem;
   margin-top: 1rem;
@@ -346,23 +349,26 @@ body {
 }
 
 /* / search rection */
+.why-we__title {
+  margin-top: 2.5rem;
+}
 .why-we__list {
+  margin-top: 1.3rem;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 18px;
-  justify-content: space-between;
+  row-gap: 1.64rem;
+  justify-content: space-around;
 }
 .why-we__item {
   display: grid;
-  grid-template-columns: 0.4fr 0.7fr;
+  grid-template-columns: 0.4fr 1fr;
   grid-template-rows: 1fr 1fr;
   place-items: center;
-  gap: 8px;
+  -moz-column-gap: 0.73rem;
+       column-gap: 0.73rem;
   padding: 1rem 0.8rem;
-  border: 0.454106px solid #8d3500;
-  border-radius: 8.17391px;
+  border: 1px solid #8d3500;
+  border-radius: 0.73rem;
 }
 .why-we__image {
   grid-row: span 2;
@@ -371,19 +377,65 @@ body {
   font-family: "Helios";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.18rem;
+  line-height: 1.17;
   letter-spacing: 0.1em;
   color: #000000;
 }
 .why-we__estate {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
+  line-height: 1.18;
   color: #000000;
 }
+.why-we__text {
+  margin-top: 1.3rem;
+  line-height: 1.18;
+  text-align: center;
+  color: #000000;
+}
+
+.about-us__subtitle {
+  margin-top: 2.09rem;
+  font-weight: 500;
+  font-size: 1.82rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.about-us__form-description {
+  margin-top: 0.55rem;
+  font-weight: 300;
+  font-size: 1.27rem;
+  line-height: 1.21;
+  text-align: center;
+}
+.about-us__form {
+  margin-top: 0.55rem;
+}
+.about-us__form input {
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  padding: 1.09rem 0.55rem;
+  border: 1px solid gray;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.18;
+  /* identical to box height */
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.map__picture {
+  width: 100%;
+}
+.map__description {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.09;
+  text-align: center;
+  color: #8d3500;
+}
+
 h1 {
   font-weight: 400;
   letter-spacing: 0.1em;

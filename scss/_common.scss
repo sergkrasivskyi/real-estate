@@ -12,14 +12,15 @@ body {
 .container {
 	padding-inline: clamp(20px, 6.4vw, 149px);
 	margin: 0 auto;
-	@include media-min($over-mobile) {
+	@include media-min($lg-screen) {
 		padding-inline: min(10.34vw, 149px);
 	}
 }
 
 .button {
+	display: block;
+	margin: 0 auto;
 	font-family: $ff-body;
-	display: inline-block;
 	background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
 	box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
 	text-align: center;
@@ -47,6 +48,7 @@ body {
 	font-size: 2.82rem; // 31px;
 	line-height: 1.16; // 36px;
 	letter-spacing: 0.1em;
+	text-align: center;
 
 	color: #8d3500;
 }
