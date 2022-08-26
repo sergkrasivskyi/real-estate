@@ -393,6 +393,12 @@ body {
   color: #000000;
 }
 
+.about-us__title {
+  margin-top: 0.55rem;
+}
+.about-us__map {
+  margin-top: 0.94rem;
+}
 .about-us__subtitle {
   margin-top: 2.09rem;
   font-weight: 500;
@@ -416,12 +422,11 @@ body {
   display: block;
   width: 100%;
   max-width: 320px;
-  padding: 1.09rem 0.55rem;
-  border: 1px solid gray;
+  padding: 0.55rem 1.09rem;
+  border: 0.509091px solid rgba(0, 0, 0, 0.25);
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.18;
-  /* identical to box height */
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -429,11 +434,20 @@ body {
   width: 100%;
 }
 .map__description {
+  margin-top: 0.55rem;
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.09;
   text-align: center;
   color: #8d3500;
+}
+
+.form-request__button {
+  margin-top: 1.85rem;
+  padding-inline: 3.52rem;
+  padding-block: 1.4rem;
+  border-radius: 2.05rem;
+  color: #FFFFFF;
 }
 
 h1 {
