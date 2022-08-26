@@ -131,6 +131,7 @@ body {
   box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
   text-align: center;
   line-height: 1.2;
+  color: #FFFFFF;
 }
 
 .closed {
@@ -303,11 +304,12 @@ body {
 }
 .search-item a {
   z-index: 2;
-  background: rgba(255, 255, 255, 0.42);
   font-weight: 500;
   font-size: 1.09rem;
   line-height: 1.25;
+  padding: 2px 5px;
   color: #ffffff;
+  background: rgba(255, 255, 255, 0.42);
 }
 .search-item a::after {
   vertical-align: middle;
@@ -447,7 +449,6 @@ body {
   padding-inline: 3.52rem;
   padding-block: 1.4rem;
   border-radius: 2.05rem;
-  color: #FFFFFF;
 }
 
 h1 {

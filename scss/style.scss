@@ -1,9 +1,4 @@
-@import "./nullstyle";
-@import "./fonts";
-@import "./mixins";
-@import './variables';
 @import "./common";
-@import "./header";
 @import "./main";
 
 
@@ -22,9 +17,6 @@ h1 {
 .footer {
 	background-color: #562000;
 }
-
-
-
 .we-on-map {
 	& img {
 		width: 100%;
