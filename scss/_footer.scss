@@ -1,0 +1,50 @@
+.footer {
+	font-weight: 300;
+	font-size: 0.82rem;
+	line-height: 1.22;
+	margin-top: 2.7rem;
+	& * {
+		color: #ffffff;
+	}
+	&__wrapper {
+		padding-block: 1rem;
+		display: grid;
+		grid-template-rows: 1fr min-content min-content;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 1.9rem;
+		row-gap: 1.24rem;
+		place-items: center;
+		text-align: center;
+	}
+
+	&__work-time {
+	}
+
+	&__logo {
+	}
+
+	&__tel {
+	}
+
+	&__mail {
+		grid-column: span 3;
+		font-size: 1rem;
+		line-height: 1.18;
+	}
+
+	&__socials {
+		margin-top: 0.64rem;
+		grid-row: 2;
+		grid-column: span 3;
+	}
+}
+
+.socials {
+	display: flex;
+	column-gap: 1.1rem;
+	&__link {
+	}
+
+	&__icon {
+	}
+}
