@@ -11,7 +11,7 @@
 	&__top {
 		position: fixed;
 		width: 85vw;;
-		z-index: 9999;
+		z-index: 9997;
 		top: 20px;
 		margin-bottom: 1.36rem;
 		display: flex;
@@ -36,10 +36,10 @@
 		&__body {
 		}
 		&__icon {
-			// z-index: 9999;
-			// position: fixed;
-			// right: 20px;
-			// top: 31px;
+			z-index: 9999;
+			position: fixed;
+			right: 20px;
+			top: 31px;
 			display: block;
 			background-color: transparent;
 			@include media-min($lg-screen) {
@@ -61,7 +61,7 @@
 				// justify-content: space-between;
 			}
 			&._active {
-				z-index: 9998;
+				z-index: 1001;
 				display: block;
 				position: fixed;
 				padding-top: 17px;

@@ -101,6 +101,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
 }
+/* experimental */
+/*  / experimental */
 /* Variables */
 /* Breakpoints*/
 html {
@@ -196,7 +198,7 @@ body {
 .header__top {
   position: fixed;
   width: 85vw;
-  z-index: 9999;
+  z-index: 9997;
   top: 20px;
   margin-bottom: 1.36rem;
   display: flex;
@@ -216,6 +218,10 @@ body {
   margin-bottom: 2.18rem;
 }
 .header .menu__icon {
+  z-index: 9999;
+  position: fixed;
+  right: 20px;
+  top: 31px;
   display: block;
   background-color: transparent;
 }
@@ -242,7 +248,7 @@ body {
   }
 }
 .header .menu__list._active {
-  z-index: 9998;
+  z-index: 1001;
   display: block;
   position: fixed;
   padding-top: 17px;
@@ -491,6 +497,196 @@ body {
   display: flex;
   -moz-column-gap: 1.1rem;
        column-gap: 1.1rem;
+}
+.text-size-12 {
+  font-size: 12px;
+}
+
+@media (min-width: 412px) {
+  .text-size-12-small {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-12-medium {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-12-large {
+    font-size: 12px;
+  }
+}
+.text-size-14 {
+  font-size: 14px;
+}
+
+@media (min-width: 412px) {
+  .text-size-14-small {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-14-medium {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-14-large {
+    font-size: 14px;
+  }
+}
+.text-size-16 {
+  font-size: 16px;
+}
+
+@media (min-width: 412px) {
+  .text-size-16-small {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-16-medium {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-16-large {
+    font-size: 16px;
+  }
+}
+.text-size-18 {
+  font-size: 18px;
+}
+
+@media (min-width: 412px) {
+  .text-size-18-small {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-18-medium {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-18-large {
+    font-size: 18px;
+  }
+}
+.text-size-20 {
+  font-size: 20px;
+}
+
+@media (min-width: 412px) {
+  .text-size-20-small {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-20-medium {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-20-large {
+    font-size: 20px;
+  }
+}
+.text-size-24 {
+  font-size: 24px;
+}
+
+@media (min-width: 412px) {
+  .text-size-24-small {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-24-medium {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-24-large {
+    font-size: 24px;
+  }
+}
+.text-size-28 {
+  font-size: 28px;
+}
+
+@media (min-width: 412px) {
+  .text-size-28-small {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-28-medium {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-28-large {
+    font-size: 28px;
+  }
+}
+.text-size-32 {
+  font-size: 32px;
+}
+
+@media (min-width: 412px) {
+  .text-size-32-small {
+    font-size: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-32-medium {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-32-large {
+    font-size: 32px;
+  }
+}
+.text-size-36 {
+  font-size: 36px;
+}
+
+@media (min-width: 412px) {
+  .text-size-36-small {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-36-medium {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-36-large {
+    font-size: 36px;
+  }
+}
+.text-size-40 {
+  font-size: 40px;
+}
+
+@media (min-width: 412px) {
+  .text-size-40-small {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .text-size-40-medium {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .text-size-40-large {
+    font-size: 40px;
+  }
 }
 h1 {
   font-weight: 400;

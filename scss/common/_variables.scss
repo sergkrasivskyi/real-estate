@@ -1,6 +1,6 @@
 $clr-primary-400: gray;
 $clr-accent-400: tomato;
-// 1 визначаємо змінні для шрифтів 
+// 1 визначаємо змінні для шрифтів
 // 1.1 font family
 $ff-primary: "Montserrat", sans-serif;
 $ff-secondary: "Helios";
@@ -27,9 +27,8 @@ $fs-primary-heading: $fs-700;
 $fs-secondary-heading: $fs-600;
 
 $fs-nav: $fs-500;
-$fs-buttton: $fs-400; 
+$fs-buttton: $fs-400;
 $lg-screen: 1150;
-
 
 @include media-min($lg-screen) {
 	// змнінюємо розмір шрифта тільки у медіа запросах
@@ -40,3 +39,19 @@ $lg-screen: 1150;
 	$fs-primary-heading: $fs-700;
 	$fs-secondary-heading: $fs-600;
 }
+/* experimental */
+// assume min-width (by default) if only a number
+$high-tide: 500px;
+// set min-width/max-width if both values are numbers
+$ex-presidents: 600px 800px;
+// if one value is a string, assume a feature/value pair
+$surfboard-width: max-width 1000px;
+// string tests together within parentheses, assume each item is a feature value pair
+$surfboard-height: (min-height 1000px) (orientation portrait);
+
+// .nixon {
+// 	@include breakpoint($ex-presidents) {
+// 		content: "Ex-Presidents";
+// 	}
+// }
+/*  / experimental */
