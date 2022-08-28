@@ -9,6 +9,10 @@
 	&__logo {
 	}
 	&__top {
+		position: fixed;
+		width: 85vw;;
+		z-index: 9999;
+		top: 20px;
 		margin-bottom: 1.36rem;
 		display: flex;
 		justify-content: space-between;
@@ -23,6 +27,7 @@
 		letter-spacing: 0.1em;
 		text-align: center;
 		color: #ffffff;
+		margin-top: 50px;
 		margin-bottom: 2.18rem;
 	}
 	&__menu {
@@ -31,10 +36,10 @@
 		&__body {
 		}
 		&__icon {
-			z-index: 9999;
-			position: fixed;
-			right: 20px;
-			top: 31px;
+			// z-index: 9999;
+			// position: fixed;
+			// right: 20px;
+			// top: 31px;
 			display: block;
 			background-color: transparent;
 			@include media-min($lg-screen) {

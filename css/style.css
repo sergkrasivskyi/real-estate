@@ -194,6 +194,10 @@ body {
 }
 
 .header__top {
+  position: fixed;
+  width: 85vw;
+  z-index: 9999;
+  top: 20px;
   margin-bottom: 1.36rem;
   display: flex;
   justify-content: space-between;
@@ -208,13 +212,10 @@ body {
   letter-spacing: 0.1em;
   text-align: center;
   color: #ffffff;
+  margin-top: 50px;
   margin-bottom: 2.18rem;
 }
 .header .menu__icon {
-  z-index: 9999;
-  position: fixed;
-  right: 20px;
-  top: 31px;
   display: block;
   background-color: transparent;
 }
@@ -466,11 +467,14 @@ body {
   grid-template-rows: 1fr -webkit-min-content -webkit-min-content;
   grid-template-rows: 1fr min-content min-content;
   grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 1.9rem;
-       column-gap: 1.9rem;
+  -moz-column-gap: 1.85rem;
+       column-gap: 1.85rem;
   row-gap: 1.24rem;
   place-items: center;
   text-align: center;
+}
+.footer__tel {
+  display: block;
 }
 .footer__mail {
   grid-column: span 3;
