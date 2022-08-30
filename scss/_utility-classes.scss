@@ -1,21 +1,49 @@
 $breakpoints: (
-  small: 412px,
-  medium: 768px,
-  large: 1024px
+	small: 412px,
+	medium: 768px,
+	large: 1024px,
 );
 
 $font-sizes: 12 14 16 18 20 24 28 32 36 40;
 
 @each $size in $font-sizes {
-  .text-size-#{$size} {
-    font-size: #{$size}px;
-  }
+	.text-size-#{$size} {
+		font-size: #{$size}px;
+	}
 
-  @each $name, $breakpoint in $breakpoints {
-    @media(min-width: $breakpoint) {
-      .text-size-#{$size}-#{$name} {
-        font-size: #{$size}px;
-      }
-    }
-  }
+	@each $name, $breakpoint in $breakpoints {
+		@media (min-width: $breakpoint) {
+			.text-size-#{$size}-#{$name} {
+				font-size: #{$size}px;
+			}
+		}
+	}
+}
+
+$displays: ("grid", "flex");
+$justifies: ("center", "space-between", "space-around", "space-evenly", "right", "left", "end");
+$aligns: ("center", "flex-end", "flex-start");
+
+@each $display in $displays {
+	.#{$display} {
+		display: #{$display};
+	}
+	@each $justify in $justifies {
+		.#{$display}-justify-#{$justify} {
+			display: #{$display};
+			justify-content: #{$justify};
+		}
+		@each $align in $aligns {
+			.#{$display}-align-#{$align} {
+				display: #{$display};
+				align-items: #{$align};
+			}
+			.#{$display}-#{$justify}-#{$align} {
+				display: #{$display};
+				justify-content: #{$justify};
+				align-items: #{$align};
+				// align-items: ;
+			}
+		}
+	}
 }

@@ -5,19 +5,44 @@ html {
 	font-size: 11px;
 }
 body {
+	// прочитати про це
+	text-rendering: optimizeSpeed;
+	// -----
 	font-family: $ff-body;
 	font-weight: 300;
 	font-size: 1rem;
+	color: #000000;
 }
+// Робимо загальні класи від Кевіна
 .container {
+	// Це писав я
 	padding-inline: clamp(20px, 6.4vw, 149px);
-	margin: 0 auto;
 	@include media-min($lg-screen) {
 		padding-inline: min(10.34vw, 149px);
+	}
+	//  ---
+
+	// А це Кевін так робив
+	// Обмежуємо ширину контейнера
+
+	$padding: 1rem;
+	$max-width: 1142px;
+	width: min($max-width, 100% - $padding * 2);
+	// Кевін центрує вміст контейнеру
+	margin-inline: auto;
+}
+// Ще один загальний класс від Кевіна
+.even-columns {
+	display: grid;
+	gap: 1rem;
+	@include media-min(50em) {
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
 	}
 }
 
 .button {
+	cursor: pointer;
 	display: block;
 	margin: 0 auto;
 	font-family: $ff-body;
@@ -25,7 +50,18 @@ body {
 	box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
 	text-align: center;
 	line-height: 1.2;
-	color: #FFFFFF;
+	color: #ffffff;
+	// Кевін
+	border-radius: 100vmax; // кнопка буде у формі 'таблетки'
+	// padding треба зробити налаштування з макету
+	padding: 1em 2.5em; // тут просто середні налаштування, не точні ще
+	
+	&[data-type='header'] {
+		background: linear-gradient(90deg, #ffffff 0%, #000000 148.54%);
+	};
+	&:hover, &:focus-visible {
+		background: linear-gradient(90deg, #e0cfa7 0%, #eb9562 148.54%);
+	};
 }
 .closed {
 	display: none;
@@ -36,11 +72,11 @@ body {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
-	border: 0;
 	padding: 0;
+	margin: -1px;
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
-	margin: -1px;
+	border: 0;
 }
 .section-title {
 	font-family: $ff-secondary;
