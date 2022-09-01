@@ -47,3 +47,9 @@ $aligns: ("center", "flex-end", "flex-start");
 		}
 	}
 }
+.flow > * + * {
+	// Цей класс "поток" обирає всі єлементи вкладені в
+	//  елемент цього класу, окрім першого
+	outline: 2px solid yellowgreen;
+
+}
