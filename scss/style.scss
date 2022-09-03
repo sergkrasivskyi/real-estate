@@ -1,20 +1,32 @@
 @import "./common";
 @import "./main";
 @import "./footer";
-@import './utility-classes';
-
-
+@import "./utility-classes";
 
 // font-family: 'Haettenschweiler Regular';
 // font-family: 'Gotham'; // Light, Medium
 // font-family: "Montserrat", sans-serif;
 // font-family: "Roboto", sans-serif;
 // font-family: "Helios";
-
+html,
+body {
+	height: 100%;
+}
 h1 {
 	// font-family: "Helios";
 	font-weight: 400;
 	letter-spacing: 0.1em;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	
+}
+.main {
+	flex: 1 1 auto;
 }
 .footer {
 	background-color: #562000;

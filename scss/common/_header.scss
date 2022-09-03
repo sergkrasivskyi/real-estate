@@ -1,22 +1,38 @@
 .header {
-	background-image: url("./../images/header/main-pict.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-block-start: 1.64rem;
+	&[data-type="primary"] {
+		background-image: url("./../images/header/main-pict.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&[data-type="secondary"] &__top {
+		background-color: rgba(0, 0, 0, 0.55);
+	}
+	// height: 7.5rem;
+	// padding-block-start: 1.64rem;
 	text-align: center;
+}
+.header-wrapper {
+	margin-top: 1.63rem;
 }
 .header {
 	&__logo {
 	}
 	&__top {
 		position: fixed;
-		width: 85vw;
+		width: 100%;
 		z-index: 9997;
-		top: 20px;
-		margin-bottom: 1.36rem;
+		top: 0;
+		left: 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding-inline: 2rem;
+		padding-block: 1.8rem;
+
+		// $padding: 2rem;
+		// $max-width: 1142px;
+		// width: min($max-width, 100% - $padding * 2);
+		// margin-bottom: 1.36rem;
 	}
 	&__title {
 		font-family: "Haettenschweiler Regular";
@@ -37,7 +53,7 @@
 		}
 		&__icon {
 			z-index: 9999;
-			position: fixed;
+			// position: fixed;
 			right: 20px;
 			top: 31px;
 			display: block;

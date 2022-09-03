@@ -15,199 +15,197 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" data-type="primary">
         <div class="container">
-          <div class="header__top">
-            <a class="header__logo" href="#"
-              ><img src="./images/header/logo-header.svg" alt="logo"
-            /></a>
-            <div class="header__menu menu">
-              <button
-                aria-controls="nav-menu"
-                class="menu__icon icon-menu"
-                type="button"
-              >
-                <img
-                  class="open-menu"
-                  src="./images/header/menu.svg"
-                  alt="open burger menu"
-                  aria-expanded="true"
-                />
-                <img
-                  class="close-menu closed"
-                  src="./images/header/menu-closed.svg"
-                  alt="close burger menu"
-                  aria-expanded="false"
-                />
-              </button>
-              <nav class="menu__body">
-                <ul class="menu__list flow" id="nav-menu" aria-hidden="true">
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Про місто</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Про нас</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Центр продажу </a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Контакти</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+<div class="header__top">
+  <a class="header__logo" href="./index.html"
+    ><img src="./images/header/logo-header.svg" alt="logo"
+  /></a>
+  <div class="header__menu menu">
+    <button aria-controls="nav-menu" class="menu__icon icon-menu" type="button">
+      <img
+        class="open-menu"
+        src="./images/header/menu.svg"
+        alt="open burger menu"
+        aria-expanded="true"
+      />
+      <img
+        class="close-menu closed"
+        src="./images/header/menu-closed.svg"
+        alt="close burger menu"
+        aria-expanded="false"
+      />
+    </button>
+    <nav class="menu__body">
+      <ul
+        class="menu__list"
+        data-spacing="tight"
+        id="nav-menu"
+        aria-hidden="true"
+      >
+        <li class="menu__item" data-spacing="tight">
+          <a class="menu__link" href="#">Про місто</a>
+        </li>
+        <li class="menu__item" data-spacing="tight">
+          <a class="menu__link" href="./about-us.html">Про нас</a>
+        </li>
+        <li class="menu__item" data-spacing="tight">
+          <a class="menu__link" href="#">Центр продажу </a>
+        </li>
+        <li class="menu__item" data-spacing="tight">
+          <a class="menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
           <h1 class="header__title">Real Estate Agency</h1>
-					<img src="" alt="">
-					<td></td>
           <a class="button header__button" data-type="header" href=""
             >Вибрати квартиру</a
           >
         </div>
       </header>
+
       <main class="main">
-        <section class="estate-search-section">
-          <h2 class="section-title visually-hidden">Make your search</h2>
-          <ul class="search-list">
-            <li class="search-item ibg one-room">
-              <a href="#">Однокімнатна</a>
-            </li>
-            <li class="search-item ibg two-room">
-              <a href="#">Двокімнатна</a>
-            </li>
-            <li class="search-item ibg office">
-              <a href="#">Офісні приміщення</a>
-            </li>
-            <li class="search-item ibg studio">
-              <a href="#">Студія</a>
-            </li>
-          </ul>
-        </section>
-        <section class="why-we-section why-we">
-          <div class="container">
-            <h2 class="section-title why-we__title">Чому ми?</h2>
-            <ul role="list" class="why-we__list">
-              <li class="why-we__item">
-                <img
-                  class="why-we__image"
-                  src="./images/main/why-we-section/flats.svg"
-                  alt="Квартири"
-                />
-                <span class="why-we__count">135</span>
-                <span class="why-we__estate">Квартири</span>
-              </li>
-              <li class="why-we__item">
-                <img
-                  class="why-we__image"
-                  src="./images/main/why-we-section/poverhiv.svg"
-                  alt="Поверхів"
-                />
-                <span class="why-we__count">10</span>
-                <span class="why-we__estate">Поверхів</span>
-              </li>
-              <li class="why-we__item">
-                <img
-                  class="why-we__image"
-                  src="./images/main/why-we-section/square.svg"
-                  alt="Площа забудови"
-                />
-                <span class="why-we__count">0.3 га</span>
-                <span class="why-we__estate">Площа забудови</span>
-              </li>
-            </ul>
-            <p class="why-we__text">
-              При передачі квартири власнику в квартирі будуть вхідні двері,
-              вікна, балконний блок, газовий котел, батареї, чорнова штукатурка
-              стін, чорнова стяжка підлоги.
-            </p>
-          </div>
-        </section>
-        <section class="about-us-section about-us">
-          <!-- ми можеми використовувати |  для
+<section class="estate-search-section">
+  <h2 class="section-title visually-hidden">Make your search</h2>
+  <ul class="search-list">
+    <li class="search-item ibg one-room">
+      <a href="#">Однокімнатна</a>
+    </li>
+    <li class="search-item ibg two-room">
+      <a href="#">Двокімнатна</a>
+    </li>
+    <li class="search-item ibg office">
+      <a href="#">Офісні приміщення</a>
+    </li>
+    <li class="search-item ibg studio">
+      <a href="#">Студія</a>
+    </li>
+  </ul>
+</section>
+<section class="why-we-section why-we">
+  <div class="container">
+    <h2 class="section-title why-we__title">Чому ми?</h2>
+    <ul role="list" class="why-we__list">
+      <li class="why-we__item">
+        <img
+          class="why-we__image"
+          src="./images/main/why-we-section/flats.svg"
+          alt="Квартири"
+        />
+        <span class="why-we__count">135</span>
+        <span class="why-we__estate">Квартири</span>
+      </li>
+      <li class="why-we__item">
+        <img
+          class="why-we__image"
+          src="./images/main/why-we-section/poverhiv.svg"
+          alt="Поверхів"
+        />
+        <span class="why-we__count">10</span>
+        <span class="why-we__estate">Поверхів</span>
+      </li>
+      <li class="why-we__item">
+        <img
+          class="why-we__image"
+          src="./images/main/why-we-section/square.svg"
+          alt="Площа забудови"
+        />
+        <span class="why-we__count">0.3 га</span>
+        <span class="why-we__estate">Площа забудови</span>
+      </li>
+    </ul>
+    <p class="why-we__text">
+      При передачі квартири власнику в квартирі будуть вхідні двері, вікна,
+      балконний блок, газовий котел, батареї, чорнова штукатурка стін, чорнова
+      стяжка підлоги.
+    </p>
+  </div>
+</section>
+<section class="about-us-section about-us">
+  <!-- ми можеми використовувати |  для
 						 візуального відділення службових класів від інших-->
-          <h2 class="section-title about-us__title | bg-primary-500">
-            Ми на карті
-          </h2>
-          <figure class="about-us__map map">
-            <img
-              class="map__picture"
-              src="./images/main/about-us-section/map.jpg"
-              alt=""
-              width="350"
-            />
-            <figcaption class="map__description">
-              20300, Умань, вул. Джерельна, 1 (біля Епіцентру)
-            </figcaption>
-          </figure>
-          <div class="container">
-            <h3 class="about-us__subtitle">Отримайте детальну консультацію</h3>
-            <p class="about-us__form-description">
-              Заповніть анкету, щоб отримати детальну відповідь на ваші
-              запитання та попередню вартість.
-            </p>
-            <form class="about-us__form form-request" action="submit">
-              <label for="client-name"></label>
-              <input
-                class="form-request__client-name"
-                type="text"
-                name="client-name"
-                placeholder="Василь Бондаренко"
-                id="client-name"
-              />
-              <label for="flat-square"></label>
-              <input
-                class="form-request__flat-square"
-                type="number"
-                name="flat-square"
-                placeholder="Бажана площа Вашої квартири"
-                id="flat-square"
-              />
-              <label for="rooms-amount"></label>
-              <input
-                class="form-request__rooms-amount"
-                type="number"
-                name="rooms-number"
-                placeholder="Однокімнатна або двокімнатна квартира"
-                id="rooms-amount"
-              />
-              <label for="client-tel"></label>
-              <input
-                class="form-request__client-tel"
-                type="tel"
-                name="client-tel"
-                pattern="[0-9]+"
-                placeholder="+380 XX XXX XX XX"
-                id="client-tel"
-              />
-              <label for="client-mail"></label>
-              <input
-                class="form-request__client-mail"
-                type="email"
-                placeholder="example@ukr.net"
-                title="Введіть коректний email"
-                pattern="[a-zA-Z0-9]{8,}"
-                name="mail"
-                id="client-mail"
-              />
-              <button
-                class="button form-request__button"
-                data-type="send-request"
-                type="button"
-              >
-                Відправити запит
-              </button>
-            </form>
-          </div>
-        </section>
+  <h2 class="section-title about-us__title | bg-primary-500">Ми на карті</h2>
+  <figure class="about-us__map map">
+    <img
+      class="map__picture"
+      src="./images/main/about-us-section/map.jpg"
+      alt=""
+      width="350"
+    />
+    <figcaption class="map__description">
+      20300, Умань, вул. Джерельна, 1 (біля Епіцентру)
+    </figcaption>
+  </figure>
+  <div class="container">
+    <h3 class="about-us__subtitle">Отримайте детальну консультацію</h3>
+    <p class="about-us__form-description">
+      Заповніть анкету, щоб отримати детальну відповідь на ваші запитання та
+      попередню вартість.
+    </p>
+    <form class="about-us__form form-request" action="submit">
+      <label for="client-name"></label>
+      <input
+        class="form-request__client-name"
+        type="text"
+        name="client-name"
+        placeholder="Василь Бондаренко"
+        id="client-name"
+      />
+      <label for="flat-square"></label>
+      <input
+        class="form-request__flat-square"
+        type="number"
+        name="flat-square"
+        placeholder="Бажана площа Вашої квартири"
+        id="flat-square"
+      />
+      <label for="rooms-amount"></label>
+      <input
+        class="form-request__rooms-amount"
+        type="number"
+        name="rooms-number"
+        placeholder="Однокімнатна або двокімнатна квартира"
+        id="rooms-amount"
+      />
+      <label for="client-tel"></label>
+      <input
+        class="form-request__client-tel"
+        type="tel"
+        name="client-tel"
+        pattern="[0-9]+"
+        placeholder="+380 XX XXX XX XX"
+        id="client-tel"
+      />
+      <label for="client-mail"></label>
+      <input
+        class="form-request__client-mail"
+        type="email"
+        placeholder="example@ukr.net"
+        title="Введіть коректний email"
+        pattern="[a-zA-Z0-9]{8,}"
+        name="mail"
+        id="client-mail"
+      />
+      <button
+        class="button form-request__button"
+        data-type="send-request"
+        type="button"
+      >
+        Відправити запит
+      </button>
+    </form>
+  </div>
+</section>
       </main>
-      <footer class="footer">
+<footer class="footer">
         <div class="container">
 					
           <div class="footer__wrapper">
             <p class="footer__work-time text-size-40-large text-size-28-medium">Години роботи: Пн-пт: 9.00-18.00</p>
 
-            <a class="footer__logo" href="#"
+            <a class="footer__logo" href="./index.html"
               ><img src="./images/footer/footer-logo.svg" alt=""
             /></a>
             <a class="footer__tel" href="tel:+380731020120"
@@ -253,8 +251,7 @@
             </ul>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     <script src="./js/script.js" defer></script>
   </body>
 </html>

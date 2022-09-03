@@ -11,24 +11,25 @@ body {
 	font-family: $ff-body;
 	font-weight: 300;
 	font-size: 1rem;
-	color: #000000;
+	color: $clr-primary-400;
 }
 // Робимо загальні класи від Кевіна
+
 .container {
-	// Це писав я
-	padding-inline: clamp(20px, 6.4vw, 149px);
-	@include media-min($lg-screen) {
-		padding-inline: min(10.34vw, 149px);
-	}
+	position: relative;
 	//  ---
-
-	// А це Кевін так робив
+	
+	
+	// padding-inline: clamp(20px, 6.4vw, 149px);
 	// Обмежуємо ширину контейнера
-
-	$padding: 1rem;
-	$max-width: 1142px;
+	$padding: 2rem;
+	$max-width: 131rem;
 	width: min($max-width, 100% - $padding * 2);
-	// Кевін центрує вміст контейнеру
+	@include media-min($lg-screen) {
+		// padding-inline: min(10.34vw, 149px);
+		$padding: 13.55rem;
+		width: min($max-width, 100% - $padding * 2);
+	}
 	margin-inline: auto;
 }
 // Ще один загальний класс від Кевіна
@@ -46,21 +47,21 @@ body {
 	display: block;
 	margin: 0 auto;
 	font-family: $ff-body;
-	background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
+	background: linear-gradient(90deg, $clr-accent-400 0%, $clr-accent-200 148.54%);
 	box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
 	text-align: center;
 	line-height: 1.2;
-	color: #ffffff;
+	color: $clr-primary-200;
 	// Кевін
 	border-radius: 100vmax; // кнопка буде у формі 'таблетки'
 	// padding треба зробити налаштування з макету
 	padding: 1em 2.5em; // тут просто середні налаштування, не точні ще
 	
 	&[data-type='header'] {
-		background: linear-gradient(90deg, #ffffff 0%, #000000 148.54%);
+		background: linear-gradient(90deg, $clr-accent-200 0%, $clr-accent-400 148.54%);
 	};
 	&:hover, &:focus-visible {
-		background: linear-gradient(90deg, #e0cfa7 0%, #eb9562 148.54%);
+		background: linear-gradient(90deg, $clr-accent-400 0%, $clr-accent-200 148.54%);
 	};
 }
 .closed {
@@ -87,7 +88,7 @@ body {
 	letter-spacing: 0.1em;
 	text-align: center;
 
-	color: #8d3500;
+	color: $clr-accent-600;
 }
 /* Utility classes*/
 // Ми визначаємо службові класи, які допоможуть

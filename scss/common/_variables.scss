@@ -1,5 +1,8 @@
-$clr-primary-400: gray;
-$clr-accent-400: tomato;
+$clr-primary-400: #000000;
+$clr-primary-200: #FFFFFF;
+$clr-accent-600: #8d3500;
+$clr-accent-400: #eb9562;
+$clr-accent-200: #e0cfa7;
 // 1 визначаємо змінні для шрифтів
 // 1.1 font family
 $ff-primary: "Montserrat", sans-serif;
@@ -29,6 +32,7 @@ $fs-secondary-heading: $fs-600;
 $fs-nav: $fs-500;
 $fs-buttton: $fs-400;
 $lg-screen: 72; //em, 1150px
+$flow-spacer: 5em;
 
 @include media-min($lg-screen) {
 	// змнінюємо розмір шрифта тільки у медіа запросах

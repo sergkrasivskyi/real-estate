@@ -3,24 +3,47 @@ $breakpoints: (
 	medium: 768px,
 	large: 1024px,
 );
+$font-sizes: (
+	100: 8,
+	150: 9,
+	200: 10,
+	250: 11,
+	300: 12,
+	350: 15,
+	400: 16,
+	450: 18,
+	500: 20,
+	550: 24,
+	600: 26,
+	650: 30,
+	700: 34,
+	750: 40,
+	800: 43,
+	850: 50,
+	900: 56,
+	950: 60,
+	980: 100,
+	990: 109,
+);
+$font-weights:(
+	400, 
+);
 
-$font-sizes: 12 14 16 18 20 24 28 32 36 40;
-
-@each $size in $font-sizes {
-	.text-size-#{$size} {
-		font-size: #{$size}px;
+@each $size, $range in $font-sizes {
+	.text-#{$size} {
+		font-size: #{$range}px;
 	}
 
 	@each $name, $breakpoint in $breakpoints {
 		@media (min-width: $breakpoint) {
-			.text-size-#{$size}-#{$name} {
-				font-size: #{$size}px;
+			.text-#{$size}-#{$name} {
+				font-size: #{$range}px;
 			}
 		}
 	}
 }
 
-$displays: ("grid", "flex");
+$displays: ("grid", "flex",);
 $justifies: ("center", "space-between", "space-around", "space-evenly", "right", "left", "end");
 $aligns: ("center", "flex-end", "flex-start");
 
@@ -47,9 +70,15 @@ $aligns: ("center", "flex-end", "flex-start");
 		}
 	}
 }
-.flow > * + * {
+// .flow{
+
+// }
+:where(.flow :not(:first-child)) {
 	// Цей класс "поток" обирає всі єлементи вкладені в
 	//  елемент цього класу, окрім першого
-	outline: 2px solid yellowgreen;
-
+	margin-top: $flow-spacer; // потрібно розібратися, як додати значення за замовчуванням
+	// додати за допомогою атрибуту інший стиль потоку
+	&[data-spacing="tight"] {
+		outline: solid 2px yellowgreen;
+	}
 }
