@@ -71,7 +71,7 @@ $aligns: ("center", "flex-end", "flex-start");
 // .flow{
 
 // }
-:where(.flow :not(:first-child)) {
+:where(.flow :not(:first-child, li)) {
 	// Цей класс "поток" обирає всі єлементи вкладені в
 	//  елемент цього класу, окрім першого
 	margin-top: $flow-spacer; 

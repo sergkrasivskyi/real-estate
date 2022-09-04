@@ -9,9 +9,28 @@
 	}
 	background-image: url("./../images/about-us-page/layout.jpg");
 	background-size: cover;
-
 }
 .title-page {
 	font-family: $ff-primary;
 	font-weight: $fw-semi-bold;
+}
+.partners-list {
+	display: grid;
+	grid-template-columns: 0.4fr 0.6fr;
+	grid-template-rows: repeat(4, min-content);
+	row-gap: 0.3rem;
+	column-gap: 3rem;
+	align-items: center;
+	text-align: left;
+	
+	& > li:first-child {
+		grid-row: 1 / 5;
+		align-self: baseline;
+		justify-self: center;
+		margin-top: 0.3rem;
+	}
+	
+	& a {
+		color: $clr-primary-400;
+	}
 }

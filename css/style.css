@@ -1131,13 +1131,13 @@ body {
   align-items: flex-start;
 }
 
-:where(.flow :not(:first-child)) {
+:where(.flow :not(:first-child, li)) {
   margin-top: 2.36rem;
 }
-:where(.flow :not(:first-child))[data-spacing="100"] {
+:where(.flow :not(:first-child, li))[data-spacing="100"] {
   margin-top: 0.2rem;
 }
-:where(.flow :not(:first-child))[data-spacing="300"] {
+:where(.flow :not(:first-child, li))[data-spacing="300"] {
   margin-top: 1.64rem;
 }
 
@@ -1477,6 +1477,27 @@ body {
 .title-page {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: repeat(4, -webkit-min-content);
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 0.3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  align-items: center;
+  text-align: left;
+}
+.partners-list > li:first-child {
+  grid-row: 1/5;
+  align-self: baseline;
+  justify-self: center;
+  margin-top: 0.3rem;
+}
+.partners-list a {
+  color: #000000;
 }
 
 html,
