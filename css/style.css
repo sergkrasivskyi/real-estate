@@ -1466,7 +1466,7 @@ body {
 }
 
 .floor-layout {
-  background-image: url("./images/about-us-page/layout.jpg");
+  background-image: url("./../images/about-us-page/layout.jpg");
   background-size: cover;
 }
 .floor-layout img {
