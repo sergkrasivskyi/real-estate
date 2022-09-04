@@ -204,7 +204,7 @@ body {
 }
 
 .fw-semi-bold {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .fw-bold {
@@ -1134,8 +1134,11 @@ body {
 :where(.flow :not(:first-child)) {
   margin-top: 2.36rem;
 }
-:where(.flow :not(:first-child))[data-spacing=tight] {
-  outline: solid 2px yellowgreen;
+:where(.flow :not(:first-child))[data-spacing="100"] {
+  margin-top: 0.2rem;
+}
+:where(.flow :not(:first-child))[data-spacing="300"] {
+  margin-top: 1.64rem;
 }
 
 .header {
@@ -1164,6 +1167,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 1.8rem;
+  margin-bottom: 1.4rem;
 }
 .header__title {
   font-family: "Haettenschweiler Regular";
@@ -1173,8 +1177,7 @@ body {
   line-height: 1.154;
   letter-spacing: 0.1em;
   text-align: center;
-  color: #ffffff;
-  margin-top: 1.4rem;
+  color: #FFFFFF;
   margin-bottom: 2.18rem;
 }
 .header .menu__icon {
@@ -1263,7 +1266,7 @@ body {
   font-weight: 300;
   font-size: 0.82rem;
   line-height: 1.22;
-  margin-top: 2.7rem;
+  margin-top: 2.6rem;
 }
 .footer * {
   color: #ffffff;
@@ -1460,6 +1463,20 @@ body {
 .about-us-video {
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+.floor-layout {
+  background-image: url("./../images/about-us-page/layout.jpg");
+  background-size: cover;
+}
+.floor-layout img {
+  width: 100%;
+  max-width: 84.45rem;
+}
+
+.title-page {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 html,

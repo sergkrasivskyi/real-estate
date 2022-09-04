@@ -2,3 +2,16 @@
 	width: 100%;
 	aspect-ratio: 16/9;
 }
+.floor-layout {
+	img {
+		width: 100%;
+		max-width: 84.45rem;
+	}
+	background-image: url("./../images/about-us-page/layout.jpg");
+	background-size: cover;
+
+}
+.title-page {
+	font-family: $ff-primary;
+	font-weight: $fw-semi-bold;
+}

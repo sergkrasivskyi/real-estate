@@ -25,9 +25,7 @@ $font-sizes: (
 	980: 100,
 	990: 109,
 );
-$font-weights:(
-	400, 
-);
+$font-weights: (400);
 
 @each $size, $range in $font-sizes {
 	.text-#{$size} {
@@ -41,9 +39,9 @@ $font-weights:(
 			}
 		}
 	}
-}
+};
 
-$displays: ("grid", "flex",);
+$displays: ("grid", "flex");
 $justifies: ("center", "space-between", "space-around", "space-evenly", "right", "left", "end");
 $aligns: ("center", "flex-end", "flex-start");
 
@@ -69,16 +67,23 @@ $aligns: ("center", "flex-end", "flex-start");
 			}
 		}
 	}
-}
+};
 // .flow{
 
 // }
 :where(.flow :not(:first-child)) {
 	// Цей класс "поток" обирає всі єлементи вкладені в
 	//  елемент цього класу, окрім першого
-	margin-top: $flow-spacer; // потрібно розібратися, як додати значення за замовчуванням
+	margin-top: $flow-spacer; 
 	// додати за допомогою атрибуту інший стиль потоку
-	&[data-spacing="tight"] {
-		outline: solid 2px yellowgreen;
+	&[data-spacing="100"] {
+		$flow-spacer: 0.2rem;
+		margin-top: $flow-spacer;
+		// outline: solid 2px yellowgreen;
 	}
-}
+	&[data-spacing="300"] {
+		$flow-spacer: 1.64rem;
+		margin-top: $flow-spacer;
+		// outline: solid 2px yellowgreen;
+	}
+};

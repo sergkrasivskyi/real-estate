@@ -14,7 +14,7 @@ $ff-body: $ff-primary;
 
 $fw-light: 300;
 $fw-regular: 400;
-$fw-semi-bold: 500;
+$fw-semi-bold: 600;
 $fw-bold: 700;
 $fw-black: 800;
 
@@ -32,7 +32,7 @@ $fs-secondary-heading: $fs-600;
 $fs-nav: $fs-500;
 $fs-buttton: $fs-400;
 $lg-screen: 72; //em, 1150px
-$flow-spacer: 2.36rem;
+$flow-spacer: 2.36rem; //26px
 
 @include media-min($lg-screen) {
 	// змнінюємо розмір шрифта тільки у медіа запросах
