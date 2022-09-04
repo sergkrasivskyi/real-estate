@@ -13,24 +13,20 @@ body {
 	font-size: 1rem;
 	color: $clr-primary-400;
 }
-// Робимо загальні класи від Кевіна
 
 .container {
-	position: relative;
-	//  ---
-	
-	
-	// padding-inline: clamp(20px, 6.4vw, 149px);
-	// Обмежуємо ширину контейнера
+// обмежуємо ширину контейнера
 	$padding: 2rem;
 	$max-width: 131rem;
 	width: min($max-width, 100% - $padding * 2);
 	@include media-min($lg-screen) {
-		// padding-inline: min(10.34vw, 149px);
+		// ширина контейнера при зміни ширини екрану
 		$padding: 13.55rem;
 		width: min($max-width, 100% - $padding * 2);
 	}
+// рівняємо по центру
 	margin-inline: auto;
+	
 }
 // Ще один загальний класс від Кевіна
 .even-columns {

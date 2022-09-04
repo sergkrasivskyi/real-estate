@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>About us</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header-wrapper">
-        <header class="header" data-type="secondary">
-          <!-- @import './sections/header-top.html' -->
-        </header>
-      </div>
-      <main class="main">
-        <h1 class="text-750 flex-justify-center text-900-medium text-980-large">
-          Про нас
-        </h1>
-        <button class="button" data-type="header">Контакти</button>
-      </main>
-      <!-- @import './sections/footer.html' -->
-    </div>
-    <script src="./js/script.js" defer></script>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<title>About us</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-type="secondary">
+			<!-- @import './sections/header-top.html' -->
+		</header>
+		<main class="main">
+			<div class="container">
+				<h1 class="[ text-750 flex-justify-center text-900-medium text-980-large ]">
+					Про нас
+				</h1>
+				<!-- ! insert video -->
+				<iframe class="[ about-us-video ]" src="https://www.youtube.com/embed/NorLM-dalTE"
+					title="Build a responsive website with HTML & CSS | Part six: CTA" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<!-- / insert video -->
+
+				<button class="button" data-type="header">Контакти</button>
+				<p class="text-300">
+					Будівництво виконується із застосуванням екологічно чистих
+					будівельних матеріалів, керамічної цегли, з внутрішнім утепленням
+					мін-сировиною. Оздоблення фасаду виконано в вишневому та кремовому
+					кольорі.
+				</p>
+				<h2 class="text-450">Типовий план поверху</h2>
+				<figure class="floor-layout">
+					<img src="./../images/about-us-page/layout.jpg" alt="" />
+					<figcaption>планування</figcaption>
+				</figure>
+			</div>
+		</main>
+
+		<!-- ! section-footer -->
+		<!-- @import './sections/footer.html' -->
+		<!-- / section-footer -->
+
+	</div>
+	<script src="./js/script.js" defer></script>
+</body>
+
 </html>
