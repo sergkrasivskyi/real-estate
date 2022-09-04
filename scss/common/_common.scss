@@ -26,6 +26,9 @@ body {
 	}
 // рівняємо по центру
 	margin-inline: auto;
+	&[data-type="about-us-page"] {
+		text-align: center;
+	}
 	
 }
 // Ще один загальний класс від Кевіна
@@ -41,7 +44,7 @@ body {
 .button {
 	cursor: pointer;
 	display: block;
-	margin: 0 auto;
+	margin-inline: auto;
 	font-family: $ff-body;
 	background: linear-gradient(90deg, $clr-accent-400 0%, $clr-accent-200 148.54%);
 	box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);

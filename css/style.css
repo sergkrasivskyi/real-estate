@@ -126,6 +126,9 @@ body {
     width: min(131rem, 100% - 27.1rem);
   }
 }
+.container[data-type=about-us-page] {
+  text-align: center;
+}
 
 .even-columns {
   display: grid;
@@ -141,7 +144,7 @@ body {
 .button {
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin-inline: auto;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
   box-shadow: 1.85106px 1.85106px 1.85106px rgba(0, 0, 0, 0.25);
@@ -285,22 +288,22 @@ body {
   }
 }
 .text-300 {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 @media (min-width: 412px) {
   .text-300-small {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (min-width: 768px) {
   .text-300-medium {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1024px) {
   .text-300-large {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .text-350 {
@@ -1129,7 +1132,7 @@ body {
 }
 
 :where(.flow :not(:first-child)) {
-  margin-top: 5em;
+  margin-top: 2.36rem;
 }
 :where(.flow :not(:first-child))[data-spacing=tight] {
   outline: solid 2px yellowgreen;
@@ -1318,7 +1321,7 @@ body {
   vertical-align: middle;
   display: inline-block;
   margin-left: 0.5rem;
-  content: url("./../images/main/search-section/right-arrow.svg");
+  content: url("./images/main/search-section/right-arrow.svg");
 }
 
 .ibg {
@@ -1338,19 +1341,19 @@ body {
 }
 
 .one-room {
-  background-image: url("./../images/main/search-section/1flat.jpg");
+  background-image: url("./images/main/search-section/1flat.jpg");
 }
 
 .two-room {
-  background-image: url("./../images/main/search-section/2flat.jpg");
+  background-image: url("./images/main/search-section/2flat.jpg");
 }
 
 .office {
-  background-image: url("./../images/main/search-section/office.jpg");
+  background-image: url("./images/main/search-section/office.jpg");
 }
 
 .studio {
-  background-image: url("./../images/main/search-section/studio.jpg");
+  background-image: url("./images/main/search-section/studio.jpg");
 }
 
 /* / search rection */
