@@ -20,7 +20,7 @@
 			vertical-align: middle;
 			display: inline-block;
 			margin-left: 0.5rem;
-			content: url("./images/main/search-section/right-arrow.svg");
+			content: url("./../images/main/search-section/right-arrow.svg");
 			// background-image: url("./../../images/main/search-section/right-arrow.svg");
 		}
 	}
@@ -42,16 +42,16 @@
 }
 
 .one-room {
-	background-image: url("./images/main/search-section/1flat.jpg");
+	background-image: url("./../images/main/search-section/1flat.jpg");
 }
 .two-room {
-	background-image: url("./images/main/search-section/2flat.jpg");
+	background-image: url("./../images/main/search-section/2flat.jpg");
 }
 .office {
-	background-image: url("./images/main/search-section/office.jpg");
+	background-image: url("./../images/main/search-section/office.jpg");
 }
 
 .studio {
-	background-image: url("./images/main/search-section/studio.jpg");
+	background-image: url("./../images/main/search-section/studio.jpg");
 }
 /* / search rection */
