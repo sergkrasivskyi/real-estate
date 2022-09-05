@@ -30,7 +30,7 @@
 		align-items: center;
 		padding-top: 1.8rem;
 		margin-bottom: 1.4rem;
-		
+
 		// padding-inline: 2rem;
 		// $padding: 2rem;
 		// $max-width: 1142px;
@@ -51,17 +51,19 @@
 	&__menu {
 	}
 	.menu {
+	
 		&__body {
 		}
 		&__icon {
-			z-index: 9999;
-			position: fixed;
-			right: 1.82rem;
-			top: 2.8rem;
-			display: block;
 			cursor: pointer;
 			border: 0;
 			background-color: transparent;
+			img {
+				z-index: 9999;
+				position: fixed;
+				top: 2.8rem;
+				right: 1.82rem;
+			}
 			@include media-min($lg-screen) {
 				display: none;
 			}
@@ -74,6 +76,7 @@
 			font-weight: 400;
 			font-size: 2.64rem;
 			line-height: 1.172;
+			// transition: all 500ms ease;
 			& * {
 				color: #ffffff;
 			}
@@ -91,18 +94,24 @@
 				right: -0.73rem;
 				height: calc(100% - 57px - 28px);
 				// inset: 0 30px 0 0;
-				background: rgba(255, 255, 255, 0.9);
+				background-color: rgba(255, 255, 255, 0.9);
 				border-top-left-radius: 43.8464px;
 				border-bottom-left-radius: 43.8464px;
 				box-shadow: -8px -28px #562000, -8px 28px #562000;
 				transform: translateX(0%);
-				transition: 500ms ease transform;
+				transition: transform 500ms ease;
 				font-size: 1.45rem;
 				line-height: 1.172;
 				& > li {
+					transition: background-color 500ms ease;
 					border: 0.454106px solid #8d3500;
 					border-radius: 8.17391px;
 					padding: 5px 3px;
+
+					&:hover,
+					&:focus-visible {
+						background-color: $clr-accent-400;
+					}
 				}
 				& > li + li {
 					margin-top: 25px;

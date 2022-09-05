@@ -20,48 +20,33 @@
         <div class="container">
 					<!-- ! header-top - logo + burger -->
 <div class="header__top">
-  <a class="header__logo" href="./index.html"
-    ><img src="./images/header/logo-header.svg" alt="logo"
-  /></a>
-  <div class="header__menu menu">
-    <button aria-controls="nav-menu" class="menu__icon icon-menu" type="button">
-      <img
-        class="open-menu"
-        src="./images/header/menu.svg"
-        alt="open burger menu"
-        aria-expanded="true"
-      />
-      <img
-        class="close-menu closed"
-        src="./images/header/menu-closed.svg"
-        alt="close burger menu"
-        aria-expanded="false"
-      />
-    </button>
-    <nav class="menu__body">
-      <ul
-        class="menu__list"
-        data-spacing="tight"
-        id="nav-menu"
-        aria-hidden="true"
-      >
-        <li class="menu__item" data-spacing="tight">
-          <a class="menu__link" href="#">Про місто</a>
-        </li>
-        <li class="menu__item" data-spacing="tight">
-          <a class="menu__link" href="./about-us.html">Про нас</a>
-        </li>
-        <li class="menu__item" data-spacing="tight">
-          <a class="menu__link" href="#">Центр продажу </a>
-        </li>
-        <li class="menu__item" data-spacing="tight">
-          <a class="menu__link" href="#">Контакти</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
-					<!-- / header-top - logo + burger -->
+	<a class="header__logo" href="./index.html"><img src="./images/header/logo-header.svg" alt="logo" /></a>
+	<div class="header__menu menu">
+		<button aria-controls="nav-menu" class="menu__icon icon-menu" type="button">
+			<!-- <div class="menu__wrapper"> -->
+				<img class="open-menu" src="./images/header/menu.svg" alt="open burger menu" aria-expanded="true" />
+				<img class="close-menu closed" src="./images/header/menu-closed.svg" alt="close burger menu"
+					aria-expanded="false" />
+			<!-- </div> -->
+		</button>
+		<nav class="menu__body">
+			<ul class="menu__list" data-spacing="tight" id="nav-menu" aria-hidden="true">
+				<li class="menu__item" data-spacing="tight">
+					<a class="menu__link" href="#">Про місто</a>
+				</li>
+				<li class="menu__item" data-spacing="tight">
+					<a class="menu__link" href="./about-us.html">Про нас</a>
+				</li>
+				<li class="menu__item" data-spacing="tight">
+					<a class="menu__link" id="sale-center" href="#">Центр продажу </a>
+				</li>
+				<li class="menu__item" data-spacing="tight">
+					<a class="menu__link" href="#">Контакти</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>					<!-- / header-top - logo + burger -->
 
           <h1 class="header__title">Real Estate Agency</h1>
           <a class="button header__button" data-type="header" href="#"

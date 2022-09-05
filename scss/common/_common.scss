@@ -57,14 +57,15 @@ body {
 	padding: 1em 2.5em; // тут просто середні налаштування, не точні ще
 	
 	&[data-type='header'] {
-		background: linear-gradient(90deg, $clr-accent-200 0%, $clr-accent-400 148.54%);
-	};
-	&:hover, &:focus-visible {
 		background: linear-gradient(90deg, $clr-accent-400 0%, $clr-accent-200 148.54%);
+	};
+	
+	&:hover, &:focus-visible {
+		background: linear-gradient(90deg, $clr-accent-200 0%, $clr-accent-400 148.54%);
 	};
 }
 .closed {
-	display: none;
+	visibility: hidden;
 }
 .visually-hidden {
 	position: absolute;

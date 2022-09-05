@@ -155,14 +155,14 @@ body {
   padding: 1em 2.5em;
 }
 .button[data-type=header] {
-  background: linear-gradient(90deg, #e0cfa7 0%, #eb9562 148.54%);
+  background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
 }
 .button:hover, .button:focus-visible {
-  background: linear-gradient(90deg, #eb9562 0%, #e0cfa7 148.54%);
+  background: linear-gradient(90deg, #e0cfa7 0%, #eb9562 148.54%);
 }
 
 .closed {
-  display: none;
+  visibility: hidden;
 }
 
 .visually-hidden {
@@ -1181,14 +1181,15 @@ body {
   margin-bottom: 2.18rem;
 }
 .header .menu__icon {
-  z-index: 9999;
-  position: fixed;
-  right: 1.82rem;
-  top: 2.8rem;
-  display: block;
   cursor: pointer;
   border: 0;
   background-color: transparent;
+}
+.header .menu__icon img {
+  z-index: 9999;
+  position: fixed;
+  top: 2.8rem;
+  right: 1.82rem;
 }
 @media (min-width: 72em) {
   .header .menu__icon {
@@ -1221,19 +1222,23 @@ body {
   top: 5.18rem;
   right: -0.73rem;
   height: calc(100% - 57px - 28px);
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-top-left-radius: 43.8464px;
   border-bottom-left-radius: 43.8464px;
   box-shadow: -8px -28px #562000, -8px 28px #562000;
   transform: translateX(0%);
-  transition: 500ms ease transform;
+  transition: transform 500ms ease;
   font-size: 1.45rem;
   line-height: 1.172;
 }
 .header .menu__list._active > li {
+  transition: background-color 500ms ease;
   border: 0.454106px solid #8d3500;
   border-radius: 8.17391px;
   padding: 5px 3px;
+}
+.header .menu__list._active > li:hover, .header .menu__list._active > li:focus-visible {
+  background-color: #eb9562;
 }
 .header .menu__list._active > li + li {
   margin-top: 25px;
@@ -1458,6 +1463,10 @@ body {
   padding-inline: 3.52rem;
   padding-block: 1.4rem;
   border-radius: 2.05rem;
+}
+.form-request._open-request {
+  position: fixed;
+  top: 15.82rem;
 }
 
 .about-us-video {
