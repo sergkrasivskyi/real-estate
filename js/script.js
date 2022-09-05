@@ -3,7 +3,7 @@ const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 const menuList = document.querySelector(".menu__list");
 const saleCenter = document.querySelector("#sale-center");
-const formRequest = document.querySelector(".form-request");
+const modalForm = document.querySelector(".modal-form");
 const page = document.querySelector("html");
 page.addEventListener("click", (event) => {
   if (
@@ -70,5 +70,5 @@ saleCenter.addEventListener("click", () => {
   closeMenu.setAttribute("aria-expanded", false);
   openMenu.setAttribute("aria-expanded", true);
   // open modal dialog
-  formRequest.classList.add("_open-request");
+  modalForm.classList.toggle("form-hidden");
 });

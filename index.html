@@ -197,7 +197,38 @@
   </div>
 </section>
         <!-- / about-us-section -->
-
+				
+			<!-- ! modal-form -->
+<div class="container">
+	<div class="modal-form form-hidden">
+		<h3 class="about-us__subtitle">Отримайте детальну консультацію</h3>
+		<p class="about-us__form-description">
+			Заповніть анкету, щоб отримати детальну відповідь на ваші запитання та
+			попередню вартість.
+		</p>
+		<form class="about-us__form form-request" action="submit">
+			<label for="client-name"></label>
+			<input class="form-request__client-name" type="text" name="client-name" placeholder="Василь Бондаренко"
+				id="client-name" />
+			<label for="flat-square"></label>
+			<input class="form-request__flat-square" type="number" name="flat-square"
+				placeholder="Бажана площа Вашої квартири" id="flat-square" />
+			<label for="rooms-amount"></label>
+			<input class="form-request__rooms-amount" type="number" name="rooms-number"
+				placeholder="Однокімнатна або двокімнатна квартира" id="rooms-amount" />
+			<label for="client-tel"></label>
+			<input class="form-request__client-tel" type="tel" name="client-tel" pattern="[0-9]+"
+				placeholder="+380 XX XXX XX XX" id="client-tel" />
+			<label for="client-mail"></label>
+			<input class="form-request__client-mail" type="email" placeholder="example@ukr.net"
+				title="Введіть коректний email" pattern="[a-zA-Z0-9]{8,}" name="mail" id="client-mail" />
+			<button class="button form-request__button" data-type="send-request" type="button">
+				Відправити запит
+			</button>
+		</form>
+	</div>
+</div>			<!-- / modal-form -->
+			
       </main>
 
       <!-- ! footer section -->

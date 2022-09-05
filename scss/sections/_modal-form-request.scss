@@ -1,0 +1,18 @@
+.modal-form {
+	display: block;
+	width: min(25.5rem, 100% - 4rem);
+	height: fit-content;
+	position: fixed;
+	top: 5rem;
+	inset: 0;
+	margin-inline: auto;
+	// left: 10rem;
+	padding: 2rem;
+	background-color: $clr-accent-200;
+	border: 0.2rem solid $clr-accent-600;
+	border-radius: 5rem;
+	z-index: 99;
+	&.form-hidden {
+		display: none;
+	}
+}

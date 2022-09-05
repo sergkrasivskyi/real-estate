@@ -1469,6 +1469,26 @@ body {
   top: 15.82rem;
 }
 
+.modal-form {
+  display: block;
+  width: min(25.5rem, 100% - 4rem);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: fixed;
+  top: 5rem;
+  inset: 0;
+  margin-inline: auto;
+  padding: 2rem;
+  background-color: #e0cfa7;
+  border: 0.2rem solid #8d3500;
+  border-radius: 5rem;
+  z-index: 99;
+}
+.modal-form.form-hidden {
+  display: none;
+}
+
 .about-us-video {
   width: 100%;
   aspect-ratio: 16/9;
